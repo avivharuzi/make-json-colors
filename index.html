@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="shortcut icon" type="image/x-icon" href="">
+        <link rel="icon" type="image/png" href="">
+    </head>
+    <body>
+        <div class="container mt-5">
+            <div id="colorsForm">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div id="messageForm">
+                        </div>
+                        <h5 class="text-center text-secondary m-3">Color Schema #1</h5>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <input type="text" name="schemaName" class="form-control" placeholder="Color Schema Name">
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="text" name="mainHex" class="form-control" placeholder="Main Hex">
+                                </div>
+                            </div>
+                        </div>
+                        <textarea class="form-control mb-3" name="hexSchema" placeholder="Hex Colors"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="row justify-content-center mt-3">
+                        <div class="col-lg-6">
+                            <button id="addColorSchema" class="btn btn-primary btn-block"><i class="fa fa-plus mr-3"></i>Add Color Schema</button>
+                        </div>
+                        <div class="col-lg-6">
+                            <button id="setColors" class="btn btn-success btn-block"><i class="fa fa-send mr-3"></i>Set Colors</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-6 mt-5" id="mainResult">
+                    <button class="btn btn-block btn-dark btn-copy text-light mb-3"><i class="fa fa-copy"></i></button>
+                    <div id="result">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"></script>
+        <script src="js/ntc/ntc.js"></script>
+        <script src="js/controllers/color.controller.js"></script>
+        <script src="js/controllers/form.controller.js"></script>
+    </body>
+</html>
