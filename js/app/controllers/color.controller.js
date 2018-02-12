@@ -90,6 +90,16 @@ function hexToCmyk(hex) {
     return `cmyk(${c}%, ${m}%, ${y}%, ${k}%)`;
 }
 
+
+function slugify(text) {
+    return text.toString().toLowerCase()
+        .replace(/\s+/g, "-")
+        .replace(/[^\w\-]+/g, "")
+        .replace(/\-\-+/g, "-")
+        .replace(/^-+/, "")
+        .replace(/-+$/, "");
+}
+
 function getWeight(i) {
     switch (i) {
         case 1:

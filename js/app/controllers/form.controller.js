@@ -50,7 +50,9 @@ function setColors() {
 
         let mainColor = getColorsConversions(mainHex, "500", schemaName);
 
-        colorSchema += `{ "name": "${mainColor.name}", "weight": "${mainColor.weight}", "hex": "${mainColor.hex}", "rgb": "${mainColor.rgb}", "hsl": "${mainColor.hsl}", "cmyk": "${mainColor.cmyk}", "children": [`;
+        let slugColor = slugify(mainColor.name);
+
+        colorSchema += `{ "name": "${mainColor.name}", "slug": "${slugColor}", "weight": "${mainColor.weight}", "hex": "${mainColor.hex}", "rgb": "${mainColor.rgb}", "hsl": "${mainColor.hsl}", "cmyk": "${mainColor.cmyk}", "children": [`;
 
         hexSchema = hexSchema.split(/\s+/);
 
